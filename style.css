@@ -1,0 +1,134 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    background: rgba(57, 71, 158, 0.5) !important; /* Adjust the alpha value for translucency */
+}
+
+
+  
+  header {
+    background: rgba(51, 51, 51, 0.5); 
+    padding: 3px;
+    text-align: center;
+    z-index: 2; /* Adjust the z-index to ensure the header is above the full-page component */
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+  
+  /* Component container */
+  .component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+  }
+  
+  /* Image */
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Title */
+  .title {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    font-family: cursive;
+    
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    animation: fadeIn 2s ease-in-out, colorChange 5s infinite alternate; /* Add the fade-in animation */
+    z-index: 1; 
+    /*mix-blend-mode: overlay;*/
+    /* The above line can be added if we want overlay */
+    
+
+  }
+  
+  /* Button */
+  #clickButton {
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(57, 71, 158, 0.8);
+    
+    color: white;
+    padding: 15px 20px;
+    border: black;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  @keyframes colorChange {
+    0% {
+        color: #fff; /* Start with white */
+    }
+    25% {
+        color: #ed7d45; /* Magenta */
+    }
+    50% {
+        color: #e3cf49; /* Green */
+    }
+    75% {
+        color: #493aea; /* Blue */
+    }
+    100% {
+        color: #ab39ed; /* End with white */
+    }
+}
+.colorful-alert {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: linear-gradient(45deg, #3498db, #e74c3c, #2ecc71, #f39c12);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 24px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
