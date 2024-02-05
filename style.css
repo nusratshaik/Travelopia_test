@@ -39,6 +39,8 @@ header a {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-size: cover; /* Add this line to make the background image cover the container */
+    background-position: center;
     
   }
   
