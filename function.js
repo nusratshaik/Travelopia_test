@@ -1,3 +1,8 @@
+document.body.style.backgroundImage = "url('travel.jpg')";
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundPosition = "center";
+document.body.style.margin = "0";
+document.body.style.padding = "0";
 document.addEventListener('DOMContentLoaded', function () {
     const clickButton = document.getElementById('clickButton');
 

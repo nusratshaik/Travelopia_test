@@ -5,7 +5,7 @@
     padding: 0;
   }
   .navbar {
-    background: rgba(57, 71, 158, 0.5) !important; /* Adjust the alpha value for translucency */
+    background: rgba(57, 71, 158, 0.5) !important; 
 }
 
 
@@ -15,7 +15,7 @@
     background: rgba(51, 51, 51, 0.5); 
     padding: 3px;
     text-align: center;
-    z-index: 2; /* Adjust the z-index to ensure the header is above the full-page component */
+    z-index: 2; /* I Have adjusted the z-index to ensure the header is above the full-page component */
     width: 100%;
     position: fixed;
   
@@ -31,13 +31,11 @@ header a {
     font-weight: bold;
 }
 
-
-  
-  /* Component container */
+/* Component container */
   .component {
     
-    position: relative; /* Change to relative positioning */
-    width: 100vw;
+    position: relative; 
+    width: 99vw;
     min-height: 100vh; /* I have used min-height to ensure it takes at least the full viewport height */
     overflow: hidden;
     padding-bottom: 100px; 
@@ -56,11 +54,7 @@ header a {
     background-color: rgba(57, 71, 158, 0.2); 
     overflow: hidden;
   }
-  body {
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
+  
  /* Title */
   .title {
     position: absolute;
@@ -104,24 +98,24 @@ header a {
 }
   @keyframes colorChange {
     0% {
-        color: #fff; /* Start with white */
+        color: #fff; 
     }
     25% {
-        color: #ed7d45; /* Magenta */
+        color: #ed7d45; 
     }
     50% {
-        color: #e3cf49; /* Green */
+        color: #e3cf49; 
     }
     75% {
-        color: #493aea; /* Blue */
+        color: #493aea; 
     }
     100% {
-        color: #ab39ed; /* End with white */
+        color: #ab39ed; 
     }
 }
 .colorful-alert {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
