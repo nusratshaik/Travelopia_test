@@ -37,30 +37,23 @@ header a {
     
     position: relative; /* Change to relative positioning */
     width: 100vw;
-    min-height: 100vh; /* Use min-height to ensure it takes at least the full viewport height */
+    min-height: 100vh; /* I have used min-height to ensure it takes at least the full viewport height */
     overflow: hidden;
     padding-bottom: 100px; 
 }
 
-/* Image styles */
-.img-fluid{
-    
-    width: 100%;
-    height: 100%;
-    background-image: url('travel.jpg');
-    object-fit: cover;
-    position: absolute;
-    
-}
+
   
   /* Overlay */
-  .overlay {
+  .overlay{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 30%;
+    background-color: rgba(57, 71, 158, 0.2); 
+    overflow: hidden;
   }
   
   /* Title */
@@ -72,12 +65,11 @@ header a {
     
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 4rem;
+    font-size: 290%;
     color: white;
-    animation: fadeIn 2s ease-in-out, colorChange 5s infinite alternate; /* Add the fade-in animation */
+    animation: fadeIn 2s ease-in-out, colorChange 5s infinite alternate; /* I have added  the fade-in animation */
     z-index: 1; 
-    /*mix-blend-mode: overlay;*/
-    /* The above line can be added if we want overlay */
+    
     
 
   }
@@ -85,7 +77,7 @@ header a {
   /* Button */
   #clickButton {
     position: absolute;
-    bottom: 190px;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(57, 71, 158, 0.8);
@@ -144,16 +136,3 @@ header a {
     }
 }
 
-@media (max-width: 768px) {
-  header a {
-      margin: 0 10px; /* Adjusted for smaller screens */
-  }
-
-  .title {
-      font-size: 2.5rem;
-  }
-
-  #clickButton {
-      bottom: 150px; /* Adjusted for smaller screens */
-  }
-}
