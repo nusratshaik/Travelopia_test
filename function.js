@@ -1,4 +1,4 @@
-document.body.style.backgroundImage = "url('travel.jpg')";
+document.body.style.backgroundImage = "url('image.jpg')";
 document.body.style.backgroundSize = "cover";
 document.body.style.backgroundPosition = "center";
 document.body.style.margin = "0";
